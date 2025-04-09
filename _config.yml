@@ -33,6 +33,9 @@ collections:
     output: true
     permalink: /:path/
 
+include:
+  - assets/css/custom.css
+
 # Social (Optional)
 social:
   github: 5h1Vm

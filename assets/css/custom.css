@@ -1,0 +1,32 @@
+/* Change background color */
+body {
+    background-color: #f8f9fa; /* subtle grey */
+  }
+  
+  /* Customize header */
+  .site-header {
+    background-color: #1c1d1f; /* dark header */
+    color: white;
+  }
+  
+  .site-title, .site-nav {
+    color: white !important;
+  }
+  
+  /* Style links */
+  a {
+    color: #007acc;
+  }
+  
+  a:hover {
+    color: #005f99;
+  }
+  
+  /* Optional: Card Styling */
+  .page__content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
