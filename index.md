@@ -5,25 +5,44 @@ permalink: /
 author_profile: true
 ---
 
-Welcome to the **MITRE ATT&CK Training Module for Forensic Analysts**.
+# Welcome to the MITRE ATT&CK Training Module
 
-This platform is a learning hub for DFIR (Digital Forensics and Incident Response) professionals and students, leveraging the MITRE ATT&CK Framework.
-
----
-
-## 📘 Quick Start
-
-- [Introduction](/mitre-module/introduction/)
-- [MITRE ATT&CK Basics](/mitre-module/basics/)
-- [Use Cases](/mitre-module/use-cases/)
-- [Training Labs](/mitre-module/labs/)
-- [Resources](/mitre-module/resources/)
+A learning platform designed for DFIR professionals and forensic analysts.
 
 ---
 
-## 🔍 About This Project
+## Quick Links
 
-Built using [GitHub Pages](https://pages.github.com/) and the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/).
+- [What is MITRE ATT&CK?](#mitre-attck-overview)
+- [Training Modules](#training-modules)
+- [Resources](#resources)
+- [About the Author](#about)
 
-Created by **Kopal Chaturvedi**  
-*M.Sc. DFIS Student @ NFSU Delhi*
+---
+
+## MITRE ATT&CK Overview
+
+> Learn about tactics, techniques, and procedures used in real-world attacks.
+
+---
+
+## Training Modules
+
+- DFIR Best Practices  
+- ATT&CK Techniques Explained  
+- Hands-On Labs  
+- Incident Response Scenarios  
+
+---
+
+## Resources
+
+- [MITRE ATT&CK Official Site](https://attack.mitre.org/)  
+- [Digital Forensics Guidelines](#)  
+- [Investigation Tools](#)
+
+---
+
+## About
+
+This platform is maintained by Kopal Chaturvedi, an M.Sc. DFIS Student at NFSU Delhi.
