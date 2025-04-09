@@ -275,11 +275,16 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  dnsruby (~> 1.72)
   github-pages (~> 232)
   jekyll-feed
+  jekyll-include-cache
   jekyll-remote-theme
   jekyll-seo-tag
   jekyll-sitemap
+  rexml (~> 3.4)
+  rubyzip (~> 2.4)
+  webrick (~> 1.9)
 
 BUNDLED WITH
    2.6.7
