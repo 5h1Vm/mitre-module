@@ -5,45 +5,25 @@ permalink: /
 author_profile: true
 ---
 
-# Welcome to the MITRE ATT&CK Training Module for Forensic Analysts
+Welcome to the **MITRE ATT&CK Training Module for Forensic Analysts**.
 
-This platform is designed as a learning hub for DFIR (Digital Forensics and Incident Response) professionals and students, leveraging the MITRE ATT&CK Framework.
-
----
-
-## Quick Start Guide 🚀
-
-- [Introduction](#introduction)
-- [MITRE ATT&CK Basics](#mitre-attack-basics)
-- [Technique Deep-Dive](#technique-deep-dive)
-- [Case Studies](#case-studies)
-- [Resources](#resources)
-- [About Project](#about-project)
+This platform is a learning hub for DFIR (Digital Forensics and Incident Response) professionals and students, leveraging the MITRE ATT&CK Framework.
 
 ---
 
-## Sections Overview
+## 📘 Quick Start
 
-### Introduction
-> Understand the importance of threat modeling and adversarial behavior mapping.
-
-### MITRE ATT&CK Basics
-> Get familiar with tactics, techniques, and procedures (TTPs).
-
-### Technique Deep-Dive
-> Explore techniques with examples, detection methods, and forensic artifacts.
-
-### Case Studies
-> Real-world incident response scenarios using MITRE ATT&CK mapping.
-
-### Resources
-> Links to tools, cheat sheets, official documentation, and more.
+- [Introduction](/mitre-module/introduction/)
+- [MITRE ATT&CK Basics](/mitre-module/basics/)
+- [Use Cases](/mitre-module/use-cases/)
+- [Training Labs](/mitre-module/labs/)
+- [Resources](/mitre-module/resources/)
 
 ---
 
-## About Project
+## 🔍 About This Project
 
-Made with ❤️ by Kopal Chaturvedi  
-M.Sc. DFIS Student @ NFSU Delhi  
-MITRE ATT&CK Training Module for Forensic Analysts  
-All Rights Reserved © 2025
+Built using [GitHub Pages](https://pages.github.com/) and the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/).
+
+Created by **Kopal Chaturvedi**  
+*M.Sc. DFIS Student @ NFSU Delhi*
