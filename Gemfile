@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 gem "github-pages", "~> 232", group: :jekyll_plugins
-# Remote Theme (Minimal Mistakes)
 gem "jekyll-remote-theme"
 
 gem "webrick", "~> 1.9"
