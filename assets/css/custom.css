@@ -1,32 +1,31 @@
-/* Change background color */
+/* Cyber Security Theme Overrides */
 body {
-    background-color: #f8f9fa; /* subtle grey */
+    background-color: #0e0e0e; /* Dark background */
+    color: #e0e0e0; /* Light text for readability */
   }
   
-  /* Customize header */
-  .site-header {
-    background-color: #1c1d1f; /* dark header */
-    color: white;
-  }
-  
-  .site-title, .site-nav {
-    color: white !important;
-  }
-  
-  /* Style links */
   a {
-    color: #007acc;
+    color: #4fc3f7;
   }
   
-  a:hover {
-    color: #005f99;
+  .site-header {
+    background-color: #111111;
+    border-bottom: 2px solid #4fc3f7;
   }
   
-  /* Optional: Card Styling */
-  .page__content {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  .site-footer {
+    background-color: #111111;
+    border-top: 2px solid #4fc3f7;
   }
+  
+  button.theme-toggle {
+    background-color: #222;
+    color: #4fc3f7;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add more styling as we move forward */
   

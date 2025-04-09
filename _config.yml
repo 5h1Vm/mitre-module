@@ -33,6 +33,12 @@ collections:
     output: true
     permalink: /:path/
 
+sass:
+  style: compressed
+
+minimal_mistakes_skin: "default" # or "dark" but let's control colors via custom.css
+
+# Add this for custom CSS
 include:
   - assets/css/custom.css
 
