@@ -25,6 +25,11 @@ minimal_mistakes_skin: "dark" # Enables dark mode skin (auto-detect possible)
 markdown: kramdown
 highlighter: rouge
 
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
 # Social (Optional)
 social:
   github: 5h1Vm
