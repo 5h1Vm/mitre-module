@@ -1,8 +1,8 @@
 title: "MITRE ATT&CK Training Module for Forensic Analysts"
-email: "kopal.dfis2242609@nfsu.ac.in" # Optional
+email: "kopal.dfis2242609@nfsu.ac.in"
 description: "A comprehensive training module for DFIR professionals leveraging the MITRE ATT&CK Framework."
-baseurl: "" # If hosted at root of the repo
-url: "https://5h1vm.github.io/mitre-module/" # Your GitHub Pages URL
+baseurl: "" # If hosted at the root of the repo
+url: "https://5h1vm.github.io/mitre-module/"
 
 author:
   name: "Kopal Chaturvedi"
@@ -13,11 +13,12 @@ logo: "/assets/images/nfsu-logo.png" # Optional logo placement
 repository: "5h1Vm/mitre-module"
 
 # Theme Settings
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # enables dark mode skin (auto-detect possible)
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "dark" # Enables dark mode skin (auto-detect possible)
 
 # Plugins for GitHub Pages
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -32,4 +33,3 @@ social:
   linkedin: 5h1Vm
   twitter: 5h1Vm
   instagram: 5h1Vm
-
