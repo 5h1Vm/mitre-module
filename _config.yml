@@ -1,8 +1,8 @@
 title: "MITRE ATT&CK Training Module for Forensic Analysts"
-email: "your-email@example.com" # Optional
+email: "kopal.dfis2242609@nfsu.ac.in" # Optional
 description: "A comprehensive training module for DFIR professionals leveraging the MITRE ATT&CK Framework."
 baseurl: "" # If hosted at root of the repo
-url: "https://5h1Vm.github.io" # Your GitHub Pages URL
+url: "https://5h1vm.github.io/mitre-module/" # Your GitHub Pages URL
 
 author:
   name: "Kopal Chaturvedi"
