@@ -4,6 +4,7 @@ title: "MITRE ATT&CK Training Module for Forensic Analysts"
 permalink: /
 author_profile: true
 ---
+<button id="theme-toggle" class="theme-toggle">Toggle Dark Mode</button>
 
 # MITRE ATT&CK Training Module for Forensic Analysts
 

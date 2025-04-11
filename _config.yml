@@ -1,7 +1,7 @@
 title: "MITRE ATT&CK Training Module for Forensic Analysts"
 email: "kopal.dfis2242609@nfsu.ac.in"
 description: "A comprehensive training module for DFIR professionals leveraging the MITRE ATT&CK Framework."
-baseurl: "/mitre-module" # If hosted at the root of the repo
+baseurl: "" 
 url: "https://5h1vm.github.io/mitre-module/"
 
 author:
@@ -9,21 +9,19 @@ author:
   bio: "M.Sc. DFIS Student @ NFSU Delhi"
   location: "India"
 
-logo: "/assets/images/nfsu-logo.png" # Optional logo placement
+logo: "/assets/images/nfsu-logo.png"
 repository: "5h1Vm/mitre-module"
 
 # Theme Settings
-theme: null # Important for remote theme setup
-
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default"  # Use light mode (change to default for light mode)
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-include-cache
-
-minimal_mistakes_skin: "air" # Enables dark mode skin (auto-detect possible)
 
 markdown: kramdown
 highlighter: rouge
@@ -33,16 +31,6 @@ collections:
     output: true
     permalink: /:path/
 
-sass:
-  style: compressed
-
-minimal_mistakes_skin: "default" # or "dark" but let's control colors via custom.css
-
-# Add this for custom CSS
-include:
-  - assets/css/custom.css
-
-# Social (Optional)
 social:
   github: 5h1Vm
   linkedin: 5h1Vm
