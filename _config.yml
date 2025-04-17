@@ -13,8 +13,9 @@ logo: "/assets/images/nfsu-logo.png"
 repository: "5h1Vm/mitre-module"
 
 # Theme Settings
+theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "default"  # Use light mode (change to default for light mode)
+minimal_mistakes_skin: "air"  # Use light mode (change to default for light mode)
 
 plugins:
   - jekyll-remote-theme
