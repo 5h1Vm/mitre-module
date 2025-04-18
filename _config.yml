@@ -1,8 +1,8 @@
 title: "MITRE ATT&CK Training Module for Forensic Analysts"
 email: "kopal.dfis2242609@nfsu.ac.in"
 description: "A comprehensive training module for DFIR professionals leveraging the MITRE ATT&CK Framework."
-baseurl: "" 
-url: "https://5h1vm.github.io/mitre-module/"
+baseurl: "/mitre-module"
+url: "https://5h1vm.github.io"
 
 author:
   name: "Kopal Chaturvedi"
@@ -17,7 +17,7 @@ remote_theme: mmistakes/minimal-mistakes@4.26.2
 minimal_mistakes_skin: "default" # Adjust to "dark" if you prefer dark mode
 
 # Enables custom CSS injection
-head_custom: head-custom.html
+head_custom: head_custom.html
 
 plugins:
   - jekyll-remote-theme
