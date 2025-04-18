@@ -1,31 +1,57 @@
 ---
-layout: home
-title: "MITRE ATT&CK Training Module"
+layout: splash
+title: "MITRE ATT&CK Training Module for Forensic Analysts"
 permalink: /
-author_profile: true
+header:
+  overlay_color: "#2b2b2b"
+  overlay_filter: "0.3"
+  overlay_image: /assets/images/cyber-banner.jpg
+  actions:
+    - label: "Start the Module"
+      url: "/lessons/"
+  caption: "Built for DFIR Professionals & Cyber Enthusiasts"
+excerpt: >
+  A hands-on, modular training experience based on the MITRE ATT&CK framework — designed to elevate your threat detection and incident response capabilities.
+intro: 
+  - excerpt: "Explore a structured training journey that blends theory, hands-on labs, real-world case studies, and forensic investigation strategies. Begin learning how adversaries operate — and how to stop them."
 ---
 
-<section class="hero">
-  <h1>Welcome to the MITRE ATT&CK Training Module for Forensic Analysts</h1>
-  <p>An Educational Resource for Cybersecurity & Digital Forensics Enthusiasts</p>
-  <p>Developed by Kopal Chaturvedi — M.Sc. DFIS @ NFSU Delhi</p>
-</section>
+{% include feature_row id="intro" type="center" %}
 
-<section class="about-section">
-  <h2>What You Will Learn</h2>
-  <p>This training module offers an in-depth exploration of the MITRE ATT&CK Framework, focused on real-world applications for forensic analysts. You will learn to identify, investigate, and respond to cyber threats using proven methodologies and tools.</p>
-</section>
+---
 
-<section class="topics-section">
-  <h2>Topics Covered</h2>
-  <ul>
-    <li><strong>Introduction to MITRE ATT&CK</strong> - Understand the structure and application of MITRE ATT&CK TTPs.</li>
-    <li><strong>In-depth Techniques & Procedures</strong> - Explore detailed technical methods of cyberattacks and their forensic relevance.</li>
-    <li><strong>Case Studies</strong> - Review real-world case studies where MITRE ATT&CK was applied to cyber forensics.</li>
-    <li><strong>Resources</strong> - Access tools, cheat sheets, and references for continuous learning.</li>
-  </ul>
-</section>
+## 🔍 What is MITRE ATT&CK?
 
-<section class="cta-section">
-  <a href="/next-page" class="btn-primary">Let's Get Started</a>
-</section>
+MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) is a curated knowledge base for describing the actions an adversary may take during an intrusion. This platform breaks those actions down into a matrix of tactics and techniques.
+
+This training module is tailored for:
+
+- Digital Forensics & Incident Response (DFIR) analysts
+- Cybersecurity students and professionals
+- Law enforcement and SOC teams
+
+---
+
+## 📚 Training Format
+
+Each module follows a structured approach:
+
+- 🧠 **Theory:** Understand the tactic and techniques
+- 🧪 **Lab:** Perform real-world threat emulation or forensic analysis
+- 📄 **Report:** Summarize findings in analyst-style reports
+- 🧠 **Evaluate:** Test your understanding through quizzes & challenges
+
+---
+
+## 🚀 Why This Module?
+
+- ✨ Open-source & accessible
+- 🧩 Modular lessons, cheat sheets & case files
+- 💻 Hands-on labs built for practical knowledge
+- 🧠 Final evaluation CTF to test everything you've learned
+
+---
+
+## 📖 Learn More
+
+Want to dive in? Hit the **Start the Module** button or browse lessons below.

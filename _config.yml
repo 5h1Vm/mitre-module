@@ -18,6 +18,8 @@ minimal_mistakes_skin: "default" # Adjust to "dark" if you prefer dark mode
 
 # Enables custom CSS injection
 head_custom: head_custom.html
+footer:
+  custom: footer_custom.html
 
 plugins:
   - jekyll-remote-theme
@@ -33,10 +35,7 @@ collections:
   pages:
     output: true
     permalink: /:path/
-
-# Disable footer
-footer: false
-
+    
 # Disable RSS feed
 feed:
   enabled: false
