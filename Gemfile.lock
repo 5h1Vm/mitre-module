@@ -276,7 +276,7 @@ PLATFORMS
 
 DEPENDENCIES
   dnsruby (~> 1.72)
-  github-pages (~> 232)
+  github-pages
   jekyll-feed
   jekyll-include-cache
   jekyll-remote-theme
