@@ -34,6 +34,13 @@ collections:
     output: true
     permalink: /:path/
 
+# Disable footer
+footer: false
+
+# Disable RSS feed
+feed:
+  enabled: false
+
 social:
   github: 5h1Vm
   linkedin: 5h1Vm
