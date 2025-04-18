@@ -1,15 +1,2 @@
 <!-- Link custom stylesheet -->
-<link rel="stylesheet" href="assets/css/customn.css">
-
-<!-- Optional: Theme switcher script -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.createElement("button");
-    toggle.innerText = "Toggle Dark Mode";
-    toggle.className = "theme-toggle";
-    toggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-    });
-    document.body.appendChild(toggle);
-  });
-</script>
+<link rel="stylesheet" href="{{ 'assets/css/custom.css' | relative_url }}">
