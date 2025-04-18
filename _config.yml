@@ -16,6 +16,9 @@ repository: "5h1Vm/mitre-module"
 remote_theme: mmistakes/minimal-mistakes@4.26.2
 minimal_mistakes_skin: "default" # Adjust to "dark" if you prefer dark mode
 
+# Enables custom CSS injection
+head_custom: head-custom.html
+
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
