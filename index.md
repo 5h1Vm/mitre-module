@@ -5,7 +5,7 @@ permalink: /
 header:
   overlay_color: "#2b2b2b"
   overlay_filter: "0.3"
-  overlay_image: /assets/images/cyber-banner.jpg
+  overlay_image: /assets/images/cyber-banner.png
   actions:
     - label: "Start the Module"
       url: "/lessons/"
