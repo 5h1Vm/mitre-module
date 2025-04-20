@@ -12,15 +12,18 @@ header:
   caption: "Built for DFIR Professionals & Cyber Enthusiasts"
 excerpt: >
   A hands-on, modular training experience based on the MITRE ATT&CK framework — designed to elevate your threat detection and incident response capabilities.
-intro: 
-  - excerpt: "Explore a structured training journey that blends theory, hands-on labs, real-world case studies, and forensic investigation strategies. Begin learning how adversaries operate — and how to stop them."
+intro:
+  - excerpt: >
+      “If you know the enemy and know yourself, you need not fear the result of a hundred battles.”
+      <br>
+      *— Sun Tzu, The Art of War*
 ---
 
 {% include feature_row id="intro" type="center" %}
 
 ---
 
-## 🔍 What is MITRE ATT&CK?
+## What is MITRE ATT&CK?
 
 MITRE ATT&CK (Adversarial Tactics, Techniques, and Common Knowledge) is a curated knowledge base for describing the actions an adversary may take during an intrusion. This platform breaks those actions down into a matrix of tactics and techniques.
 
@@ -32,26 +35,26 @@ This training module is tailored for:
 
 ---
 
-## 📚 Training Format
+## Training Format
 
 Each module follows a structured approach:
 
-- 🧠 **Theory:** Understand the tactic and techniques
-- 🧪 **Lab:** Perform real-world threat emulation or forensic analysis
-- 📄 **Report:** Summarize findings in analyst-style reports
-- 🧠 **Evaluate:** Test your understanding through quizzes & challenges
+- **Theory:** Understand the tactic and techniques
+- **Lab:** Perform real-world threat emulation or forensic analysis
+- **Report:** Summarize findings in analyst-style reports
+- **Evaluate:** Test your understanding through quizzes & challenges
 
 ---
 
-## 🚀 Why This Module?
+## Why This Module?
 
-- ✨ Open-source & accessible
-- 🧩 Modular lessons, cheat sheets & case files
-- 💻 Hands-on labs built for practical knowledge
-- 🧠 Final evaluation CTF to test everything you've learned
+- Open-source & accessible
+- Modular lessons, cheat sheets & case files
+- Hands-on labs built for practical knowledge
+- Final evaluation CTF to test everything you've learned
 
 ---
 
-## 📖 Learn More
+## Learn More
 
 Want to dive in? Hit the **Start the Module** button or browse lessons below.
