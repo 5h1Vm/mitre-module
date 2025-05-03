@@ -335,3 +335,47 @@ li {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
 }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header-footer-bg);
+  padding: 0.75rem 1rem;
+}
+.navbar .logo__img {
+  height: 40px;
+}
+.site-title a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li { margin-left: 1.5rem; }
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: var(--primary-accent);
+}
+
+/* Mobile: collapse nav links into hamburger menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .navbar {
+    flex-wrap: wrap;
+  }
+  /* You can add a toggle button here for mobile menu */
+}

@@ -36,7 +36,6 @@ collections:
     output: true
     permalink: /:path/
     
-# Disable RSS feed
 feed:
   enabled: false
 
