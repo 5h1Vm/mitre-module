@@ -28,6 +28,8 @@ plugins:
 collections:
   modules:
     output: true
+    permalink: /:path/
+
   pages:
     output: true
     permalink: /:path/
