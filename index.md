@@ -75,7 +75,6 @@ Each module in this training program follows a consistent and progressive struct
   </div>
 </section>
 
----
 
 ## Getting Started
 
@@ -102,5 +101,3 @@ Labs are designed for use in isolated virtual machines or test environments. Nev
 
 **Q: Will I get a certificate?**  
 While this is currently a self-paced, open-source project, a final CTF-based evaluation and badge system is planned for future releases.
-
----

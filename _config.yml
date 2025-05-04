@@ -26,6 +26,8 @@ plugins:
 
 # Collections
 collections:
+  modules:
+    output: true
   pages:
     output: true
     permalink: /:path/

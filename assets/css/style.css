@@ -1,5 +1,3 @@
-
-/* MITRE ATT&CK Training - Full CSS */
 /*===========================
   🎨 Base Colors & Theme
 ===========================*/
@@ -64,6 +62,7 @@ h2 { font-size: 2rem; }
 h3 { font-size: 1.75rem; }
 
 p, li {
+  font-size: 1rem;
   color: var(--secondary-text-color);
   margin-bottom: 1.5rem;
 }
@@ -86,65 +85,133 @@ a:hover {
 }
 
 /*===========================
-  ✅ Button
+  🧭 Header
 ===========================*/
-.btn-primary {
-  background-color: var(--cta-bg);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin-top: 1rem;
+.custom-header {
+  background: linear-gradient(90deg, #f8f9fa, #ffffff);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid var(--divider-color);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.btn-primary:hover,
-.btn-primary:active {
-  background-color: var(--cta-hover-bg);
-  transform: translateY(-2px);
+.logo-nav-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.btn-primary:focus {
-  outline: 3px solid var(--primary-accent);
-  outline-offset: 2px;
+.logo-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-/*===========================
-  📢 Hero Section
+.site-logo {
+  height: 42px;
+  width: auto;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.custom-nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-accent-hover);
+  text-decoration: underline;
+}
+
+/* ===========================
+  📢 Hero Banner (Splash)
 ===========================*/
-.hero {
-  background: #2e3b4e;
-  color: #fff;
+.page__hero--overlay {
   padding: 4rem 2rem;
-  text-align: center;
+  text-align: left;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
-.hero h1 {
-  font-size: 3rem;
+.page__hero--overlay .wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page__title {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero p {
+.page__lead {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.page__hero-caption {
+  display: block;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-top: 0.75rem;
 }
 
 /*===========================
-  🧾 Quotes
+  📚 Curriculum Table
 ===========================*/
-blockquote {
-  font-style: italic;
-  border-left: 4px solid var(--primary-accent);
-  padding-left: 1rem;
-  margin: 2rem 0;
-  color: var(--secondary-text-color);
+.curriculum-section {
+  margin-top: 2rem;
+}
+
+.responsive-table-wrapper {
+  overflow-x: auto;
+}
+
+.curriculum-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.curriculum-table th,
+.curriculum-table td {
+  border: 1px solid var(--divider-color);
+  text-align: left;
+  padding: 0.75rem;
+  vertical-align: top;
+}
+
+.curriculum-table th {
+  background-color: #f4f7fa;
+  color: var(--text-color);
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 /*===========================
-  📦 Card Grid Section
+  📦 Card Grid Section (Modules)
 ===========================*/
 .cards-section {
   padding: 3rem 0;
@@ -153,40 +220,23 @@ blockquote {
 
 .cards-section .section-title {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
-  padding: 0 1rem;
 }
 
 .card {
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid var(--divider-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   padding: 1.5rem;
+  border-radius: 8px;
   transition: all 0.3s ease;
   text-align: left;
-}
-
-.card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: var(--text-color);
-}
-
-.card p {
-  font-size: 1rem;
-  color: var(--secondary-text-color);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
 .card a {
@@ -196,55 +246,49 @@ blockquote {
   font-size: 0.95rem;
 }
 
-/*===========================
-  🧭 Header & Navigation
-===========================*/
-.custom-header {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 0.5rem 1rem;
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
 }
 
-.logo-nav-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
-.site-logo {
-  height: 40px;
-  margin-right: 0.5rem;
+.card p {
+  font-size: 0.95rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 1rem;
 }
 
-.site-title {
-  font-size: 1.5rem;
-  margin: 0;
-  color: #333;
-}
-
-.custom-nav .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links a {
-  color: #333;
-  font-weight: bold;
-}
-
-.nav-links a:hover {
-  color: var(--primary-accent);
-}
-
-.nav-links a.active {
-  border-bottom: 2px solid var(--primary-accent);
-  padding-bottom: 2px;
-}
-
+  /*===========================
+    ✅ Button
+  ===========================*/
+  .btn-primary {
+    background-color: var(--cta-bg);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:active {
+    background-color: var(--cta-hover-bg);
+    transform: translateY(-2px);
+  }
+  
+  .btn-primary:focus {
+    outline: 3px solid var(--primary-accent);
+    outline-offset: 2px;
+  }
+  
 /*===========================
   📎 Footer
 ===========================*/
@@ -290,11 +334,13 @@ blockquote {
 
 .footer-bottom {
   font-size: 0.75rem;
+  color: var(--secondary-text-color);
   opacity: 0.8;
+  line-height: 1.4;
 }
 
 /*===========================
-  📱 Responsive Adjustments
+  📱 Responsive Design
 ===========================*/
 @media (max-width: 768px) {
   .container {
@@ -305,8 +351,12 @@ blockquote {
   h2 { font-size: 1.5rem; }
   h3 { font-size: 1.25rem; }
 
-  .hero h1 {
-    font-size: 2.5rem;
+  .page__title {
+    font-size: 2rem;
+  }
+
+  .page__lead {
+    font-size: 1rem;
   }
 
   .btn-primary {
@@ -314,11 +364,67 @@ blockquote {
     font-size: 1rem;
   }
 
-  .site-title {
-    font-size: 1.2rem;
+  .logo-nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
   }
 
   .card-grid {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
+}
+
+/* Hero Section */
+.page__hero--overlay {
+  background-color: #2b2b2b;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/cyber-banner.png');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.page__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.page__lead {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.page__hero-caption {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Button */
+.btn--light-outline {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn--light-outline:hover {
+  background-color: #fff;
+  color: #2b2b2b;
+}
+
+/* Quote Section */
+blockquote {
+  font-style: italic;
+  border-left: 4px solid var(--primary-accent);
+  padding-left: 1rem;
+  margin: 2rem 0;
+  color: var(--secondary-text-color);
 }

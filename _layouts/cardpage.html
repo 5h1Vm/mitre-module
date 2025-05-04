@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MITRE ATT&CK Forensics | Kopal Chaturvedi</title>
-  
+  <title>Modules | MITRE ATT&CK Forensics Training</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/images/logo.png' | relative_url }}" type="image/png">
@@ -11,14 +10,12 @@
 <body>
 
   <!-- Header -->
-  <header class="custom-header enhanced-header">
+  <header class="custom-header">
     <div class="logo-nav-wrap container">
-      <div class="logo-title-wrap">
-        <a href="{{ '/' | relative_url }}">
-          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="MITRE Logo" class="site-logo">
-        </a>
-        <h1 class="site-title">MITRE ATT&CK Forensics</h1>
-      </div>
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="MITRE Logo" class="site-logo">
+      </a>
+      <h1 class="site-title">MITRE ATT&CK Forensics</h1>
       <nav class="custom-nav">
         <ul class="nav-links">
           <li><a href="{{ '/' | relative_url }}">Home</a></li>
@@ -30,20 +27,14 @@
     </div>
   </header>
 
-  {% if page.header.overlay_color or page.header.overlay_image %}
-    {% include page__hero.html %}
-  {% endif %}
-
+  <!-- Main Content -->
   <main class="main-content container">
-    <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
-      <meta itemprop="headline" content="{{ page.title }}">
-      <meta itemprop="description" content="{{ page.excerpt | default: site.description }}">
-      <section class="page__content" itemprop="text">
-        {{ content }}
-      </section>
-    </article>
+    <section class="page__content">
+      {{ content }}
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="site-footer__inner container">
       <div class="footer-links">
