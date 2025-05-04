@@ -1,3 +1,5 @@
+
+/* MITRE ATT&CK Training - Full CSS */
 /*===========================
   🎨 Base Colors & Theme
 ===========================*/
@@ -16,13 +18,30 @@
 /*===========================
   🌐 Base Layout & Typography
 ===========================*/
+html {
+  font-size: 100%;
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 108%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 95%;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.75;
+  font-size: 1.05rem;
 }
 
 .container {
@@ -45,7 +64,6 @@ h2 { font-size: 2rem; }
 h3 { font-size: 1.75rem; }
 
 p, li {
-  font-size: 1rem;
   color: var(--secondary-text-color);
   margin-bottom: 1.5rem;
 }
@@ -65,6 +83,33 @@ a {
 
 a:hover {
   color: var(--primary-accent-hover);
+}
+
+/*===========================
+  ✅ Button
+===========================*/
+.btn-primary {
+  background-color: var(--cta-bg);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--cta-hover-bg);
+  transform: translateY(-2px);
+}
+
+.btn-primary:focus {
+  outline: 3px solid var(--primary-accent);
+  outline-offset: 2px;
 }
 
 /*===========================
@@ -88,83 +133,14 @@ a:hover {
 }
 
 /*===========================
-  ℹ️ About Section
+  🧾 Quotes
 ===========================*/
-.about-section {
-  background: #f4f7fc;
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.about-section h2 {
-  color: var(--text-color);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about-section p {
-  font-size: 1.125rem;
-  margin-bottom: 2rem;
-}
-
-/*===========================
-  📚 Topics Section
-===========================*/
-.topics-section {
-  background: #fff;
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.topics-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.topics-section ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 800px;
-  text-align: left;
-}
-
-.topics-section li {
-  font-size: 1.125rem;
-  margin-bottom: 1rem;
-}
-
-.topics-section li strong {
-  font-weight: bold;
-}
-
-/*===========================
-  ✅ Call-To-Action Button
-===========================*/
-.btn-primary {
-  background-color: var(--cta-bg);
-  color: white;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  border-radius: 5px;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  margin-top: 1.5rem;
-}
-
-.btn-primary:hover,
-.btn-primary:active {
-  background-color: var(--cta-hover-bg);
-}
-
-/*===========================
-  🧾 CTA Section
-===========================*/
-.cta-section {
-  text-align: center;
-  margin-top: 3rem;
+blockquote {
+  font-style: italic;
+  border-left: 4px solid var(--primary-accent);
+  padding-left: 1rem;
+  margin: 2rem 0;
+  color: var(--secondary-text-color);
 }
 
 /*===========================
@@ -177,32 +153,47 @@ a:hover {
 
 .cards-section .section-title {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 .card {
   background-color: white;
   border: 1px solid var(--divider-color);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   padding: 1.5rem;
   transition: all 0.3s ease;
+  text-align: left;
 }
 
 .card h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
 /*===========================
@@ -249,6 +240,11 @@ a:hover {
   color: var(--primary-accent);
 }
 
+.nav-links a.active {
+  border-bottom: 2px solid var(--primary-accent);
+  padding-bottom: 2px;
+}
+
 /*===========================
   📎 Footer
 ===========================*/
@@ -288,32 +284,13 @@ a:hover {
 }
 
 .footer-links a:hover {
-  color: var(--primary-accent-hover); /* Or use a specific color like #007bff */
+  color: var(--primary-accent-hover);
   text-decoration: underline;
 }
 
-/* Copyright section */
 .footer-bottom {
   font-size: 0.75rem;
-  color: var(--secondary-text-color);
   opacity: 0.8;
-}
-
-
-/*===========================
-  🧩 Section Padding Helpers
-===========================*/
-.section {
-  padding: 3rem 0;
-  border-bottom: 1px solid var(--divider-color);
-}
-
-.section:last-child {
-  border-bottom: none;
-}
-
-.main-content {
-  padding: 2rem 0;
 }
 
 /*===========================
@@ -330,13 +307,6 @@ a:hover {
 
   .hero h1 {
     font-size: 2.5rem;
-  }
-
-  .hero p,
-  .about-section h2,
-  .topics-section h2,
-  .topics-section li {
-    font-size: 1rem;
   }
 
   .btn-primary {
