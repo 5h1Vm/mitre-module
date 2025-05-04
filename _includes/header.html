@@ -1,21 +1,16 @@
-<!-- _includes/header.html -->
-<nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <a href="{{ "/" | relative_url }}">
-          <img src="{{ site.logo | relative_url }}" alt="Logo" class="logo__img"/>
-        </a>
-      </div>
-      <div class="site-title">
-        <a href="{{ "/" | relative_url }}">{{ site.title }}</a>
-      </div>
+<header class="custom-header">
+  <div class="container logo-nav-wrap">
+    <a href="{{ '/' | relative_url }}" class="logo-title-link">
+      <img src="{{ '/assets/images/nfsu-logo.png' | relative_url }}" alt="Logo" class="site-logo">
+      <h1 class="site-title">MITRE ATT&CK Training Module</h1>
+    </a>
+
+    <nav class="custom-nav">
       <ul class="nav-links">
-        <li><a href="{{ "/introduction/" | relative_url }}">Introduction</a></li>
-        <li><a href="{{ "/basics/" | relative_url }}">ATT&CK Basics</a></li>
-        <li><a href="{{ "/lessons/" | relative_url }}">Lessons</a></li>
-        <li><a href="{{ "/resources/" | relative_url }}">Resources</a></li>
-        <li><a href="{{ "/about/" | relative_url }}">About</a></li>
+        {% for item in site.data.navigation %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
       </ul>
-    </div>
-  </nav>
-  
+    </nav>
+  </div>
+</header>

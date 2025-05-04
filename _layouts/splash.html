@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<!-- {% include header.html %} -->
+
+{% if page.header.overlay_color or page.header.overlay_image %}
+  {% include page__hero.html %}
+{% endif %}
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="{{ page.title }}">
+    <meta itemprop="description" content="{{ page.excerpt | default: site.description }}">
+
+    <section class="page__content" itemprop="text">
+      {{ content }}
+    </section>
+  </article>
+</div>

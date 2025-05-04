@@ -3,6 +3,7 @@ email: "kopal.dfis2242609@nfsu.ac.in"
 description: "A comprehensive training module for DFIR professionals leveraging the MITRE ATT&CK Framework."
 baseurl: "/mitre-module"
 url: "https://5h1vm.github.io"
+repository: "5h1Vm/mitre-module"
 
 author:
   name: "Kopal Chaturvedi"
@@ -10,37 +11,49 @@ author:
   location: "India"
 
 logo: "/assets/images/nfsu-logo.png"
-repository: "5h1Vm/mitre-module"
 
-# Theme Settings
 remote_theme: mmistakes/minimal-mistakes@4.26.2
-minimal_mistakes_skin: "default" # Adjust to "dark" if you prefer dark mode
-
-# Enables custom CSS injection
-head_custom: head_custom.html
-footer:
-  custom: footer_custom.html
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-include-cache
-
 markdown: kramdown
 highlighter: rouge
 
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
 collections:
   pages:
     output: true
     permalink: /:path/
-    
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+  - scope:
+      path: "assets/css"
+    values:
+      sitemap: false
+
+# Assets
+include:
+  - _pages
+  - _includes
+
+assets:
+  css:
+    - "/assets/css/style.css"
+
+# Custom Includes
+head_custom: head_custom.html
+footer:
+  custom: footer.html
+
+# Feed (disabled)
 feed:
   enabled: false
-
-social:
-  github: 5h1Vm
-  linkedin: 5h1Vm
-  twitter: 5h1Vm
-  instagram: 5h1Vm

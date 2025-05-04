@@ -1,62 +1,50 @@
-/* Base Colors */
+/*===========================
+  🎨 Base Colors & Theme
+===========================*/
 :root {
-  --bg-color: #f9f9f9;          /* Background color for the website */
-  --text-color: #202124;        /* Main text color */
-  --primary-accent: #1769ff;    /* Primary accent (Blue) */
-  --primary-accent-hover: #0f4dcc; /* Hover color for accents */
-  --header-footer-bg: #f1f3f4;  /* Light grey for header/footer */
-  --divider-color: #e0e0e0;     /* Divider color for sections */
-  --secondary-text-color: #5f6368; /* Subtext color */
-  --cta-bg: #1769ff;            /* Call-to-action button background */
-  --cta-hover-bg: #0f4dcc;      /* Call-to-action button hover background */
+  --bg-color: #f9f9f9;
+  --text-color: #202124;
+  --secondary-text-color: #5f6368;
+  --primary-accent: #1769ff;
+  --primary-accent-hover: #0f4dcc;
+  --header-footer-bg: #f1f3f4;
+  --divider-color: #e0e0e0;
+  --cta-bg: #1769ff;
+  --cta-hover-bg: #0f4dcc;
 }
 
-/* Body */
+/*===========================
+  🌐 Base Layout & Typography
+===========================*/
 body {
-  font-family: 'Roboto', sans-serif; /* Clean and readable font */
+  font-family: 'Roboto', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
-/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* Global Styles */
-a {
-  color: var(--primary-accent);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--primary-accent-hover);
-}
-
+/*===========================
+  🧭 Headings & Text
+===========================*/
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text-color);
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+  color: var(--text-color);
 }
 
-h1 {
-  font-size: 2.5rem;
-}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
 
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-p {
+p, li {
   font-size: 1rem;
   color: var(--secondary-text-color);
   margin-bottom: 1.5rem;
@@ -67,12 +55,21 @@ ul, ol {
   margin-bottom: 1.5rem;
 }
 
-li {
-  font-size: 1rem;
-  color: var(--secondary-text-color);
+/*===========================
+  🔗 Links
+===========================*/
+a {
+  color: var(--primary-accent);
+  text-decoration: none;
 }
 
-/* Hero Section */
+a:hover {
+  color: var(--primary-accent-hover);
+}
+
+/*===========================
+  📢 Hero Section
+===========================*/
 .hero {
   background: #2e3b4e;
   color: #fff;
@@ -90,33 +87,32 @@ li {
   margin-bottom: 2rem;
 }
 
-.hero p:last-child {
-  font-weight: bold;
-}
-
-/* About Section */
+/*===========================
+  ℹ️ About Section
+===========================*/
 .about-section {
-  padding: 3rem 2rem;
   background: #f4f7fc;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
 .about-section h2 {
+  color: var(--text-color);
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--text-color);
 }
 
 .about-section p {
   font-size: 1.125rem;
-  color: var(--secondary-text-color);
   margin-bottom: 2rem;
 }
 
-/* Topics Section */
+/*===========================
+  📚 Topics Section
+===========================*/
 .topics-section {
-  padding: 3rem 2rem;
   background: #fff;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
@@ -128,9 +124,9 @@ li {
 .topics-section ul {
   list-style-type: none;
   padding: 0;
-  text-align: left;
   margin: 0 auto;
   max-width: 800px;
+  text-align: left;
 }
 
 .topics-section li {
@@ -142,47 +138,9 @@ li {
   font-weight: bold;
 }
 
-/* CTA Button */
-.cta-section {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.cta-section .btn-primary {
-  font-size: 1.125rem;
-  background-color: #0066cc;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-.cta-section .btn-primary:hover {
-  background-color: #0057b7;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .about-section h2,
-  .topics-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .topics-section li {
-    font-size: 1rem;
-  }
-}
-
-/* Buttons */
+/*===========================
+  ✅ Call-To-Action Button
+===========================*/
 .btn-primary {
   background-color: var(--cta-bg);
   color: white;
@@ -190,94 +148,28 @@ li {
   font-size: 1.1rem;
   border-radius: 5px;
   display: inline-block;
-  margin-top: 1.5rem;
   text-align: center;
   text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 1.5rem;
 }
 
-.btn-primary:hover {
-  background-color: var(--cta-hover-bg);
-}
-
+.btn-primary:hover,
 .btn-primary:active {
   background-color: var(--cta-hover-bg);
-  transform: translateY(1px);
 }
 
-/* Header and Footer */
-.site-header, .site-footer {
-  background-color: var(--header-footer-bg);
-  padding: 1rem 0;
+/*===========================
+  🧾 CTA Section
+===========================*/
+.cta-section {
   text-align: center;
-  border-bottom: 1px solid var(--divider-color);
+  margin-top: 3rem;
 }
 
-.site-header h1, .site-footer h1 {
-  font-size: 1.5rem;
-  color: var(--text-color);
-}
-
-.site-footer {
-  font-size: 0.9rem;
-  color: var(--secondary-text-color);
-}
-
-/* Section Spacing */
-.section {
-  padding: 3rem 0;
-  border-bottom: 1px solid var(--divider-color);
-}
-
-.section:last-child {
-  border-bottom: none;
-}
-
-/* Main Content */
-.main-content {
-  padding: 2rem 0;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .container {
-    padding: 0 10px;
-  }
-
-  .btn-primary {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  .site-header h1, .site-footer h1 {
-    font-size: 1.2rem;
-  }
-}
-/* Card Section */
+/*===========================
+  📦 Card Grid Section
+===========================*/
 .cards-section {
   padding: 3rem 0;
   text-align: center;
@@ -286,10 +178,8 @@ li {
 .cards-section .section-title {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: var(--text-color);
 }
 
-/* Card Grid */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -300,7 +190,7 @@ li {
   background-color: white;
   border: 1px solid var(--divider-color);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 1.5rem;
   transition: all 0.3s ease;
 }
@@ -308,74 +198,157 @@ li {
 .card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--text-color);
-}
-
-.card p {
-  font-size: 1rem;
-  color: var(--secondary-text-color);
-  margin-bottom: 1.5rem;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-.card .btn-primary {
-  font-size: 1rem;
-  text-align: center;
-  padding: 0.8rem 1.5rem;
-  display: inline-block;
+/*===========================
+  🧭 Header & Navigation
+===========================*/
+.custom-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-  .card-grid {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  }
-}
-
-/* Navbar */
-.navbar {
+.logo-nav-wrap {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: var(--header-footer-bg);
-  padding: 0.75rem 1rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.navbar .logo__img {
+
+.site-logo {
   height: 40px;
+  margin-right: 0.5rem;
 }
-.site-title a {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-color);
-  text-decoration: none;
+
+.site-title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
 }
-.nav-links {
-  display: flex;
+
+.custom-nav .nav-links {
   list-style: none;
+  display: flex;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
-.nav-links li { margin-left: 1.5rem; }
+
 .nav-links a {
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: 500;
+  color: #333;
+  font-weight: bold;
 }
+
 .nav-links a:hover {
   color: var(--primary-accent);
 }
 
-/* Mobile: collapse nav links into hamburger menu */
+/*===========================
+  📎 Footer
+===========================*/
+.site-footer {
+  background-color: var(--header-footer-bg);
+  padding: 2rem 0 1.5rem;
+  border-top: 1px solid var(--divider-color);
+  font-size: 0.85rem;
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.site-footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: var(--primary-accent-hover); /* Or use a specific color like #007bff */
+  text-decoration: underline;
+}
+
+/* Copyright section */
+.footer-bottom {
+  font-size: 0.75rem;
+  color: var(--secondary-text-color);
+  opacity: 0.8;
+}
+
+
+/*===========================
+  🧩 Section Padding Helpers
+===========================*/
+.section {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.main-content {
+  padding: 2rem 0;
+}
+
+/*===========================
+  📱 Responsive Adjustments
+===========================*/
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .container {
+    padding: 0 10px;
   }
-  .navbar {
-    flex-wrap: wrap;
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+
+  .hero h1 {
+    font-size: 2.5rem;
   }
-  /* You can add a toggle button here for mobile menu */
+
+  .hero p,
+  .about-section h2,
+  .topics-section h2,
+  .topics-section li {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
 }
