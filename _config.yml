@@ -18,9 +18,11 @@ highlighter: rouge
 
 # Plugins
 plugins:
-  - jekyll-remote-theme
-  - jekyll-sitemap
-  - jekyll-seo-tag
+   - jekyll-remote-theme
+   - jekyll-feed
+   - jekyll-sitemap
+   - jekyll-seo-tag
+   - jekyll-include-cache
 
 # Collections
 collections:
