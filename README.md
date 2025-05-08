@@ -45,7 +45,7 @@ https://5h1vm.github.io/mitre-module/
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 | Technology             | Role                                                              |
 |------------------------|-------------------------------------------------------------------|
@@ -61,7 +61,7 @@ https://5h1vm.github.io/mitre-module/
 
 ## 📂 Repository Structure
 
-
+```
 /
 ├── 404.html                   # Custom 404 (Liquid-parsed)
 ├── README.md                  # Project overview & roadmap
@@ -75,33 +75,33 @@ https://5h1vm.github.io/mitre-module/
 │   ├── css/style.css          # Custom theme overrides
 │   └── images/                # Logos, banners, icons
 └── modules/                   # (Optional) pre-built module folders
-
+```
 
 ---
 
 ## 🛫 Getting Started
 
 1. **Clone Repo**  
-   bash
+   ```bash
    git clone https://github.com/5h1Vm/mitre-module.git
    cd mitre-module
-   
+   ```
 
 2. **Install Dependencies**  
-   bash
+   ```bash
    bundle install
-   
+   ```
 
 3. **Serve Locally**  
-   bash
+   ```bash
    bundle exec jekyll serve --livereload
-     
+   ```  
    Open `http://127.0.0.1:4000/mitre-module/`.
 
 4. **Build**  
-   bash
+   ```bash
    bundle exec jekyll build
-     
+   ```  
    Generated site in `_site/`.
 
 5. **Deploy**  
@@ -109,13 +109,13 @@ https://5h1vm.github.io/mitre-module/
 
 ---
 
-## 🗺 Project Roadmap
+## 🗺️ Project Roadmap
 
 **Phase 1 – Setup** (✅)  
 - Jekyll & Minimal Mistakes theme integration  
 - GitHub Pages CI build  
 
-**Phase 2 – Design & Layout** (⚙ In Progress)  
+**Phase 2 – Design & Layout** (⚙️ In Progress)  
 - Homepage splash & module sitemap  
 - Responsive navbar, logo, dark/light toggle  
 
@@ -130,7 +130,7 @@ https://5h1vm.github.io/mitre-module/
 
 ---
 
-## ⚠ Contribution
+## ⚠️ Contribution
 
 This project was developed as a Minor Project for academic purposes.  
 _Contributions are not open to the public._  
