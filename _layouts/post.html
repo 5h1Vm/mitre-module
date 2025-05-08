@@ -1,16 +1,16 @@
+<!-- _layouts/post.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MITRE ATT&CK Forensics | Kopal Chaturvedi</title>
-  
+  <title>{{ page.title }} | MITRE ATT&CK Forensics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/images/logo.png' | relative_url }}" type="image/png">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header (shared) -->
   <header class="custom-header enhanced-header">
     <div class="logo-nav-wrap container">
       <div class="logo-title-wrap">
@@ -30,24 +30,53 @@
     </div>
   </header>
 
-  {% if page.header.overlay_color or page.header.overlay_image %}
+  <!-- Hero Banner (optional override per page) -->
+  {% if page.header.overlay_image %}
     {% include page__hero.html %}
   {% endif %}
 
+  <!-- Breadcrumb / “You are here” -->
+  <nav class="breadcrumb container">
+    <a href="{{ '/' | relative_url }}">Home</a> &rsaquo;
+    <a href="{{ '/modules/' | relative_url }}">Modules</a> &rsaquo;
+    <span>{{ page.title }}</span>
+  </nav>
+
+  <!-- Main Content -->
   <main class="main-content container">
-    <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
-      <meta itemprop="headline" content="{{ page.title }}">
-      <meta itemprop="description" content="{{ page.excerpt | default: site.description }}">
-      <section class="page__content" itemprop="text">
+    <article class="post-content" itemscope itemtype="https://schema.org/Article">
+      <header class="post-header">
+        <h2 class="post-title">{{ page.title }}</h2>
+        {% if page.date %}
+          <p class="post-meta">Published on {{ page.date | date: "%B %-d, %Y" }}</p>
+        {% endif %}
+        {% if page.excerpt %}
+          <p class="post-excerpt">{{ page.excerpt }}</p>
+        {% endif %}
+      </header>
+
+      <section class="post-body" itemprop="articleBody">
         {{ content }}
       </section>
+
+      <!-- Tags / Categories (optional) -->
+      {% if page.tags %}
+        <footer class="post-footer">
+          <p>Tags:
+            {% for tag in page.tags %}
+              <a href="{{ '/tags/' | append: tag | relative_url }}">#{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </p>
+        </footer>
+      {% endif %}
     </article>
   </main>
 
+  <!-- Footer (shared) -->
   <footer class="site-footer">
     <div class="site-footer__inner container">
       <div class="footer-links">
-        <a href="/">Home</a>
+        <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/modules/' | relative_url }}">Modules</a>
         <a href="/privacy/">Privacy Policy</a>
         <a href="https://github.com/5h1vm" target="_blank">GitHub</a>
