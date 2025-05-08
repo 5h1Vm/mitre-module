@@ -428,3 +428,153 @@ blockquote {
   margin: 2rem 0;
   color: var(--secondary-text-color);
 }
+
+/*────────────────────────────────────
+  Breadcrumb
+────────────────────────────────────*/
+.breadcrumb {
+  background: #fff;
+  border: 1px solid var(--divider-color);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  max-width: 1200px;
+  font-size: 0.9rem;
+}
+.breadcrumb a {
+  color: var(--primary-accent);
+  text-decoration: none;
+  margin: 0 0.25rem;
+}
+.breadcrumb span {
+  color: var(--secondary-text-color);
+  margin-left: 0.25rem;
+}
+
+/*────────────────────────────────────
+  Table of Contents (Jump-To)
+────────────────────────────────────*/
+.post-toc {
+  background: #f1f3f4;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+.post-toc a {
+  margin-right: 0.75rem;
+  color: var(--primary-accent);
+}
+
+/*────────────────────────────────────
+  Blockquotes
+────────────────────────────────────*/
+blockquote {
+  border-left: 4px solid var(--primary-accent);
+  background: #fafafa;
+  padding: 1rem 1.25rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+/*────────────────────────────────────
+  Callout Boxes
+────────────────────────────────────*/
+.callout {
+  border-left: 4px solid var(--primary-accent);
+  background: #e8f0fe;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+.callout-warning {
+  border-color: var(--primary-accent);
+}
+
+/*────────────────────────────────────
+  Section Dividers
+────────────────────────────────────*/
+.post-body hr {
+  border: 0;
+  height: 1px;
+  background: var(--divider-color);
+  margin: 3rem 0;
+}
+
+/*────────────────────────────────────
+  Figures & Captions
+────────────────────────────────────*/
+.post-body figure {
+  text-align: center;
+  margin: 2rem 0;
+}
+.post-body img {
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.post-body figcaption {
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+  margin-top: 0.5rem;
+}
+
+/*────────────────────────────────────
+  Sticky Next-Module CTA
+────────────────────────────────────*/
+.next-cta {
+  position: sticky;
+  bottom: 1rem;
+  text-align: right;
+  margin: 0 1rem;
+}
+
+/*────────────────────────────────────
+  Resources Section
+────────────────────────────────────*/
+.post-resources {
+  background: #f9fafb;
+  border-left: 4px solid var(--primary-accent);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+.post-resources h3 {
+  margin-top: 0;
+  color: var(--text-color);
+}
+.post-resources ul {
+  list-style: disc inside;
+}
+.post-resources li a {
+  color: var(--primary-accent);
+}
+
+/* Tables in posts */
+.post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+.post-body th,
+.post-body td {
+  border: 1px solid var(--divider-color);
+  padding: 0.75rem;
+  text-align: left;
+}
+.post-body th {
+  background-color: #f4f7fa;
+}
+
+/* Resources box spacing */
+.post-resources.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Jump-to TOC spacing on mobile */
+@media (max-width: 768px) {
+  .post-toc {
+    font-size: 0.85rem;
+  }
+}
