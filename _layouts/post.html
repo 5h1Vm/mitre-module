@@ -77,19 +77,6 @@
         {% endif %}
       </header>
 
-      <!-- Table of Contents -->
-      {% if page.toc %}
-        <nav class="post-toc container">
-          <strong>Jump to:</strong>
-          {% for heading in content | split:"\n" %}
-            {% if heading contains "## " %}
-              {% assign id = heading | slugify %}
-              <a href="#{{ id }}">{{ heading | remove: "## " }}</a>
-            {% endif %}
-          {% endfor %}
-        </nav>
-      {% endif %}
-
       <!-- Article Body -->
       <section class="post-body" itemprop="articleBody">
         {{ content }}

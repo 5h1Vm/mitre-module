@@ -10,12 +10,14 @@
 <body>
 
   <!-- Header -->
-  <header class="custom-header">
+  <header class="custom-header enhanced-header">
     <div class="logo-nav-wrap container">
-      <a href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="MITRE Logo" class="site-logo">
-      </a>
-      <h1 class="site-title">MITRE ATT&CK Forensics</h1>
+      <div class="logo-title-wrap">
+        <a href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="MITRE Logo" class="site-logo">
+        </a>
+        <h1 class="site-title">MITRE ATT&CK Forensics</h1>
+      </div>
       <nav class="custom-nav">
         <ul class="nav-links">
           <li><a href="{{ '/' | relative_url }}">Home</a></li>
