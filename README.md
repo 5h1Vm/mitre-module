@@ -2,8 +2,8 @@
 
 A hands-on, modular training portal built for DFIR (Digital Forensics & Incident Response) professionals, law-enforcement analysts, SOC teams, and cybersecurity students. This site guides you through the MITRE ATT&CK framework—covering theory, practical labs, reporting, and final evaluations (quizzes & CTF).
 
-> **Author:** Kopal Chaturvedi  
-> M.Sc. DFIS Student @ NFSU Delhi  
+> **Author:** Shivam  
+>  Student @ NFSU Delhi  
 > **Minor Project • All Rights Reserved © 2025**  
 
 ---
@@ -142,6 +142,6 @@ If you’re an instructor or DFIR team lead interested in reusing or adapting th
 ## 📜 License
 
 All Rights Reserved © 2025  
-Designed & authored by Kopal Chaturvedi, M.Sc. DFIS @ NFSU Delhi  
+Designed & authored by Shivam,  @ NFSU Delhi  
 
 ---

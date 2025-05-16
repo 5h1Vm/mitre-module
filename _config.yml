@@ -1,13 +1,13 @@
 title: "MITRE ATT&CK Training Module"
-email: "kopal.dfis2242609@nfsu.ac.in"
+email: "shivam.btmtcs22228@nfsu.ac.in"
 description: "A comprehensive training module for DFIR professionals leveraging the MITRE ATT&CK Framework."
 baseurl: "/mitre-module"
 url: "https://5h1vm.github.io"
 repository: "5h1Vm/mitre-module"
 
 author:
-  name: "Kopal Chaturvedi"
-  bio: "M.Sc. DFIS Student @ NFSU Delhi"
+  name: "Shivam"
+  bio: " Student @ NFSU Delhi"
   location: "India"
 
 logo: "/assets/images/nfsu-logo.png"

@@ -24,6 +24,6 @@ policies for data handling details.
 ### Contact
 
 Questions about this privacy policy may be directed to  
-kopal.dfis2242609@nfsu.ac.in
+shivam.btmtcs22228@nfsu.ac.in
 
 All rights reserved © 2025  

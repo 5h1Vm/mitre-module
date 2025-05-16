@@ -6,7 +6,7 @@ permalink: /about/
 
 ## MITRE ATT&CK Training Module for Forensic Analysts
 
-**Kopal Chaturvedi**, M.Sc. Digital Forensics & Incident Response (DFIS), NFSU Delhi, created this open-source learning platform to help DFIR professionals, law enforcement, SOC teams, and government cyber-defense units master the MITRE ATT&CK framework.
+**Shivam**, NFSU Delhi, created this open-source learning platform to help DFIR professionals, law enforcement, SOC teams, and government cyber-defense units master the MITRE ATT&CK framework.
 
 ### Why This Project?
 

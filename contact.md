@@ -10,7 +10,7 @@ Whether you’ve found a typo, want to suggest a lab improvement, or have a cont
 please drop me a line.
 
 **Email:**  
-kopal.dfis2242609@nfsu.ac.in
+shivam.btmtcs22228@nfsu.ac.in
 
 **GitHub Issues & PRs**  
 Feel free to open an issue or pull request on the project repository:  
@@ -20,4 +20,4 @@ Feel free to open an issue or pull request on the project repository:
 
 #### Social & Professional
 
-- LinkedIn: [Kopal Chaturvedi](https://www.linkedin.com/in/kopal-chaturvedi)
+- LinkedIn: [Shivam](https://www.linkedin.com/in/5h1Vm)
