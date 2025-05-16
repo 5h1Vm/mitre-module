@@ -21,3 +21,4 @@ Feel free to open an issue or pull request on the project repository:
 #### Social & Professional
 
 - LinkedIn: [Shivam](https://www.linkedin.com/in/5h1Vm)
+- LinkedIn: [Kopal Chaturvedi](https://www.linkedin.com/in/kopal-chaturvedi)
